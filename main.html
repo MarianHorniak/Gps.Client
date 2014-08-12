@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Gps Client</title>
+    <meta charset="utf-8"/>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body onload="onLoad()">
+<div class='waitingDiv'>&nbsp;</div>
+
+<!-- HEADER -->
+<div id="jpHeader">
+    <div id="jpInfo"></div>
+    <!--<div id="jpInfoAdd"><label id="currentSpeed" class="NumberHeader">0</label>&nbsp;&nbsp;<label id="currentTacho" class="NumberHeader">000000</label></div>-->
+    <div id="jpInfoAdd"></div>
+</div>
+
+<!-- LOG -->
+<div id="jpLog"></div>
+
+
+    
+<!--menu--> 
+<div id="menu">
+<div class='footer' id="footermenu">
+
+    <button title="Submenu" id="btnSubmenu"  class="icon ico_submenu">&nbsp;</button>&nbsp;
+    <button id="btnmain" data-route="main" class="icon ico_jp">&nbsp;</button>
+    <button id="btnlogin" data-route="login" class="icon ico_end">&nbsp;</button>&nbsp;
+</div>
+<div class='submenu' id="divsubmenu" style="display:none;z-index:10000;">
+    <table>
+        <tr>
+            <td colspan="2"><button id="btnmap" data-route="map" class="icon ico_map">&nbsp;</button>
+                            <button id="btnSet" data-route="set" class="icon ico_settings" style="display:none">&nbsp;</button>
+                            <button id="btnInfo" data-route="info" class="icon ico_info" style="display:none">&nbsp;</button>
+            </td>
+        </tr>
+        </table>
+</div>
+</div>
+
+
+
+
+
+
+<!-- Main -->
+<script id="main-tpl" type="text/x-handlebars-template">
+    <div class="mainForm" id="mainForm"></div>
+</script>
+
+<script id="mainForm-template" type="text/x-handlebars-template">
+    <div class='mainFormScroll'>
+            <div id="mainViewDetail"><script>app.fillHtmlElement("mainViewDetail", Globals.noDataString);</script> </div>
+    </div>
+</script>
+
+
+
+<!-- Map -->
+<script id="map-tpl" type="text/x-handlebars-template">
+<div id="map-canvas"></div>
+</script>
+
+<!-- Login -->
+<script id="login-tpl" type="text/x-handlebars-template">
+<div class="header">
+    <button id="settTitle" class="textHeaderTitle" disabled="disabled">Activation</button>
+    <button id="settingsSave" class="icon ico_submit transparent">&nbsp;</button>
+    <button id="appExit" class="icon ico_end">&nbsp;</button>
+</div>
+<div id="loginForm" class="scrollBottom2"></div>
+</script>
+
+<script id="loginForm-tpl" type="text/x-handlebars-template">
+<form id="loginForm-form">
+    <input type="url" placeholder="Service address" name="url" id="url" value="{{this.url}}"/>  
+    <input type="text" placeholder="Device Identification" name="DeviceIdentification" id="DeviceIdentification" value="{{this.DeviceIdentification}}"/>  
+    {{#if this.ErrorMessage}}<div class="error">{{this.ErrorMessage}}</div>{{/if}}
+</form>
+</script>
+
+
+
+<script src="phonegap.js"></script>
+<script src="lib/json2.js"></script>    
+<script src="lib/jquery-1.8.2.min.js"></script>
+<script src="lib/handlebars.js"></script>
+<script src="lib/google_jsapi.js"></script>
+<script src="lib/iscroll.js"></script>
+<script src="lib/iso8601.js"></script>
+<script src="Scripts/Bussiness.js"></script>
+<script src="Scripts/PositionService.js"></script>
+<script src="Scripts/Service.js"></script>
+<script src="Scripts/JpView.js"></script>
+<script src="Scripts/ActionsView.js"></script>
+<script src="Scripts/ActionsAddView.js"></script>
+<script src="Scripts/SelectJpView.js"></script>
+<script src="Scripts/AutoActionView.js"></script>
+<script src="Scripts/MapView.js"></script>
+<script src="Scripts/LoginView.js"></script>
+<script src="Scripts/SettingsView.js"></script>
+<script src="Scripts/Globals.js"></script>
+<script src="Scripts/Errors.js"></script>
+<script src="Scripts/Lists.js"></script>
+<script src="Scripts/main.js"></script>
+<script src="Scripts/Translator.js"></script>
+<script src="Scripts/NotificationLocal.js"></script>
+<script src="Scripts/MediaInternal.js"></script>
+<script src="Scripts/Geo.js"></script>
+<script src="Scripts/Diagnostic.js"></script>
+<script src="Scripts/PurchaseView.js"></script>
+<script src="Scripts/TankView.js"></script>
+<script src="Scripts/NoteView.js"></script>
+<script src="Scripts/ActionsFuelStatusView.js"></script>
+<script src="Scripts/MainView.js"></script>
+</body>
+</html>

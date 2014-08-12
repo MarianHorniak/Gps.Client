@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC5331FE-2B24-4A7A-8562-F15DCC00A0AC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gps.Client</RootNamespace>
+    <AssemblyName>Gps.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="audio\SK\NewMessage.mp3" />
+    <Content Include="audio\SK\StandAvailable.mp3" />
+    <Content Include="audio\SK\StandLeave.mp3" />
+    <Content Include="audio\sound_message.mp3" />
+    <Content Include="audio\sound_new.mp3" />
+    <Content Include="audio\sound_order.mp3" />
+    <Content Include="config.xml" />
+    <Content Include="css\styles.css" />
+    <Content Include="img\appbar.base.png" />
+    <Content Include="img\appbar.cancel.point.png" />
+    <Content Include="img\appbar.check.png" />
+    <Content Include="img\appbar.cog.png" />
+    <Content Include="img\appbar.location.round.png" />
+    <Content Include="img\appbar.menu.png" />
+    <Content Include="img\appbar.messages.png" />
+    <Content Include="img\appbar.messagesnew.png" />
+    <Content Include="img\appbar.phone.hangup.png" />
+    <Content Include="img\appbar.phone.png" />
+    <Content Include="img\appbar.power.png" />
+    <Content Include="img\appbar.save.png" />
+    <Content Include="img\appbar.thumb.up.add.png" />
+    <Content Include="img\appbar.thumbs.down.png" />
+    <Content Include="img\appbar.thumbs.up.png" />
+    <Content Include="img\appbar.tools.png" />
+    <Content Include="img\appbar.transit.hazard.png" />
+    <Content Include="img\appbar.undo.point.png" />
+    <Content Include="img\cabs.png" />
+    <Content Include="img\ico_activate.png" />
+    <Content Include="img\ico_carstatus_run.png" />
+    <Content Include="img\ico_carstatus_stop.png" />
+    <Content Include="img\ico_info.png" />
+    <Content Include="img\ico_jp.png" />
+    <Content Include="img\ico_pause.png" />
+    <Content Include="img\ico_road.png" />
+    <Content Include="img\ico_roadstatus_highway.png" />
+    <Content Include="img\ico_roadstatus_road.png" />
+    <Content Include="img\ico_roadstatus_terrain1.png" />
+    <Content Include="img\ico_roadstatus_terrain2.png" />
+    <Content Include="img\ico_roadstatus_town.png" />
+    <Content Include="img\ico_stop.png" />
+    <Content Include="img\ico_travelstatus_private.png" />
+    <Content Include="img\ico_travelstatus_private_old.png" />
+    <Content Include="img\ico_travelstatus_public.png" />
+    <Content Include="img\ico_travelstatus_public_old.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\logomin.png" />
+    <Content Include="img\man.png" />
+    <Content Include="img\phoneicon.png" />
+    <Content Include="img\phoneicon1.png" />
+    <Content Include="img\phoneiconsmall.png" />
+    <Content Include="img\roadstatus_highway.png" />
+    <Content Include="img\roadstatus_outoftown.png" />
+    <Content Include="img\roadstatus_terrain1.png" />
+    <Content Include="img\roadstatus_terrain2.png" />
+    <Content Include="img\roadstatus_town.png" />
+    <Content Include="img\taxicon.png" />
+    <Content Include="img\transparent.png" />
+    <Content Include="img\up-and-down.png" />
+    <Content Include="img\waiting.gif" />
+    <Content Include="img\waiting3.gif" />
+    <Content Include="img\waiting5.gif" />
+    <Content Include="index.html" />
+    <Content Include="lib\google_jsapi.js" />
+    <Content Include="lib\handlebars.js" />
+    <Content Include="lib\iscroll.js" />
+    <Content Include="lib\iso8601.js" />
+    <Content Include="lib\iso8601.min.js" />
+    <Content Include="lib\jquery-1.8.2.min.js" />
+    <Content Include="lib\jquery.signalR-1.0.1.min.js" />
+    <Content Include="lib\json2.js" />
+    <Content Include="lib\powermanagement.js" />
+    <Content Include="lib\signalr-hubs.js" />
+    <Content Include="main.html" />
+    <Content Include="Scripts\AutoActionView.js" />
+    <Content Include="Scripts\Bussiness.js" />
+    <Content Include="Scripts\MainView.js" />
+    <Content Include="Scripts\Diagnostic.js" />
+    <Content Include="Scripts\Errors.js" />
+    <Content Include="Scripts\Geo.js" />
+    <Content Include="Scripts\Globals.js" />
+    <Content Include="Scripts\Lists.js" />
+    <Content Include="Scripts\LoginView.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\MapView.js" />
+    <Content Include="Scripts\MediaInternal.js" />
+    <Content Include="Scripts\NotificationLocal.js" />
+    <Content Include="Scripts\PositionService.js" />
+    <Content Include="Scripts\Service.js" />
+    <Content Include="Scripts\Translator.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50460/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

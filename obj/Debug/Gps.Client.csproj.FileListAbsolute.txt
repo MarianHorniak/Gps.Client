@@ -1,0 +1,5 @@
+D:\dfProject2008\FMNew\Gps.Client\bin\Gps.Client.dll
+D:\dfProject2008\FMNew\Gps.Client\bin\Gps.Client.pdb
+D:\dfProject2008\FMNew\Gps.Client\obj\Debug\Gps.Client.dll
+D:\dfProject2008\FMNew\Gps.Client\obj\Debug\Gps.Client.pdb
+D:\dfProject2008\FMNew\Gps.Client\obj\Debug\Gps.Client.csprojResolveAssemblyReference.cache
